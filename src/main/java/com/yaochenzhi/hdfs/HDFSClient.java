@@ -31,7 +31,7 @@ public class HDFSClient {
 	public void testCopyFromLocalFile() throws IOException, InterruptedException, URISyntaxException{
 		Configuration conf = new Configuration();
 		FileSystem fs = FileSystem.get(new URI("hdfs://192.168.1.11:9000"), conf, "hadoop");
-		fs.copyFromLocalFile(new Path("d:/readme.txt"), new Path("/com.yaochenzhi.hdfs/readme.txt"));
+		fs.copyFromLocalFile(new Path("d:/readme.txt"), new Path("/com.yaochenzhi.hdfs/readme2.txt"));
 		fs.close();
 		System.out.println("Well done 2!");
 	}
